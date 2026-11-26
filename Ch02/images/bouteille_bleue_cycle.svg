@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: system-ui, sans-serif; font-size: 20px; font-weight: bold; fill: #1e293b; }
+      .box-blue { fill: #e0f2fe; stroke: #0284c7; stroke-width: 2px; rx: 8px; }
+      .box-incolore { fill: #f8fafc; stroke: #64748b; stroke-width: 2px; rx: 8px; }
+      .text-title { font-family: system-ui, sans-serif; font-size: 16px; font-weight: bold; }
+      .text-sub { font-family: system-ui, sans-serif; font-size: 13px; fill: #475569; }
+      .arrow { stroke: #2563eb; stroke-width: 3px; fill: none; marker-end: url(#arrowhead); }
+      .arrow-slow { stroke: #dc2626; stroke-width: 3px; fill: none; stroke-dasharray: 6,6; marker-end: url(#arrowhead-red); }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2563eb" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#dc2626" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="400" y="35" text-anchor="middle" class="title">Cycle d'Oxydoréduction - Expérience de la Bouteille Bleue</text>
+
+  <!-- State 1: BM+ (Bleu) -->
+  <rect x="80" y="140" width="220" height="120" class="box-blue" />
+  <text x="190" y="180" text-anchor="middle" class="text-title" fill="#0369a1">Forme BM⁺ (Bleue)</text>
+  <text x="190" y="210" text-anchor="middle" class="text-sub">+ Glucose (C₆H₁₂O₆)</text>
+  <text x="190" y="230" text-anchor="middle" class="text-sub">Milieu Basique (HO⁻)</text>
+
+  <!-- State 2: BMH (Incolore) -->
+  <rect x="500" y="140" width="220" height="120" class="box-incolore" />
+  <text x="610" y="180" text-anchor="middle" class="text-title" fill="#334155">Forme BMH (Incolore)</text>
+  <text x="610" y="210" text-anchor="middle" class="text-sub">+ Ion Gluconate (C₆H₁₁O₇⁻)</text>
+  <text x="610" y="230" text-anchor="middle" class="text-sub">Produits incolores</text>
+
+  <!-- Arrows -->
+  <!-- Top arrow: Slow reduction by glucose -->
+  <path d="M 300 170 Q 400 100 500 170" class="arrow-slow" />
+  <text x="400" y="115" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#dc2626">Réaction LENTE (Repos)</text>
+  <text x="400" y="135" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#991b1b">Oxydation du Glucose par BM⁺</text>
+
+  <!-- Bottom arrow: Fast oxidation by O2 -->
+  <path d="M 500 230 Q 400 300 300 230" class="arrow" />
+  <text x="400" y="325" text-anchor="middle" font-family="sans-serif" font-size="14" font-weight="bold" fill="#2563eb">Réaction RAPIDE (Agitation)</text>
+  <text x="400" y="345" text-anchor="middle" font-family="sans-serif" font-size="12" fill="#1e40af">Dissolution et oxydation par O₂ (aq)</text>
+
+</svg>

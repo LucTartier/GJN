@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrigé Détaillé : Contrôle de Chimie - Cinétique & Oxydoréduction (Chapitre 02)</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Integration MathJax pour le rendu fluide des formules LaTeX -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- En-tête principal -->
+    <header>
+      <h1>🧪 Chimie - Corrigé Détaillé et Explicatif</h1>
+      <div class="subtitle">Contrôle du Chapitre 02 : Cinétique Chimique & Réactions d'Oxydoréduction</div>
+      <div class="meta-tags">
+        <span class="tag">Niveau : Terminale Spécialité PC</span>
+        <span class="tag">Oxydoréduction & Demi-équations</span>
+        <span class="tag">Milieu Acide vs Basique</span>
+        <span class="tag">Facteurs Cinétiques & Vitesse</span>
+        <span class="tag">Réactif Limitant & Avancement</span>
+      </div>
+    </header>
+
+    <!-- Fiche des notions essentielles du cours -->
+    <section class="card">
+      <h2>💡 Notions Essentielles du Cours à Maîtriser</h2>
+      
+      <div class="concept-box">
+        <h4>1. Équilibrage d'une demi-équation d'oxydoréduction</h4>
+        <p>Pour équilibrer une demi-équation d'oxydoréduction $\text{Ox} + n e^- \rightleftharpoons \text{Red}$ :</p>
+        <ul>
+          <li><strong>Étape 1 :</strong> Équilibrer l'élément principal autre que $\text{O}$ et $\text{H}$.</li>
+          <li><strong>Étape 2 :</strong> Équilibrer l'élément oxygène $\text{O}$ avec des molécules d'eau $\text{H}_2\text{O}$.</li>
+          <li><strong>Étape 3 :</strong> Équilibrer l'élément hydrogène $\text{H}$ avec des ions oxonium/hydrogène $\text{H}^+$.</li>
+          <li><strong>Étape 4 :</strong> Équilibrer les charges électriques avec des électrons $e^-$.</li>
+          <li><strong>Passage en milieu basique :</strong> Ajouter autant d'ions hydroxyde $\text{HO}^-$ de chaque côté que d'ions $	ext{H}^+$, puis combiner $\text{H}^+ + \text{HO}^- \rightarrow \text{H}_2\text{O}$ et simplifier les molécules d'eau.</li>
+        </ul>
+      </div>
+
+      <div class="concept-box">
+        <h4>2. Facteurs cinétiques et vitesse de réaction</h4>
+        <p>Un <strong>facteur cinétique</strong> est un paramètre qui modifie la vitesse d'une réaction chimique :</p>
+        <ul>
+          <li><strong>Concentration initiale des réactifs :</strong> Plus la concentration des réactifs est élevée, plus le nombre de chocs par unité de temps entre entités réactives augmente, ce qui accélère la réaction.</li>
+          <li><strong>Température :</strong> Une augmentation de température accroît l'agitation thermique et la proportion de chocs efficaces.</li>
+        </ul>
+      </div>
+
+      <div class="concept-box">
+        <h4>3. Dilution et concentration initiale dans un mélange</h4>
+        <p>Lors du mélange de plusieurs solutions sans réaction immédiate, la concentration initiale de chaque espèce $\text{X}$ dans le volume total $V_{\text{total}}$ s'exprime par :</p>
+        $$\text{[X]}_0 = \frac{n_i(\text{X})}{V_{\text{total}}} = \frac{C_{\text{mère}} \cdot V_{\text{prélevé}}}{V_{\text{total}}}$$
+      </div>
+
+      <div class="concept-box">
+        <h4>4. Identification du réactif limitant et état final</h4>
+        <p>Pour la réaction $a\text{A} + b\text{B} \rightarrow c\text{C} + d\text{D}$, on compare les rapports stœchiométriques initiaux $\frac{n_0(\text{A})}{a}$ et $\frac{n_0(\text{B})}{b}$. Le réactif limitant est celui dont le rapport est le plus faible. L'avancement maximal $x_{\text{max}}$ est égal à ce rapport minimal.</p>
+      </div>
+    </section>
+
+    <!-- EXERCICE 1 -->
+    <section class="card">
+      <h2>Exercice 1 : La bouteille bleue</h2>
+      
+      <p class="question-block">
+        <strong>Énoncé :</strong> Le bleu de méthylène existe sous deux formes : l’une $\text{BM}^+$ bleue, l’autre $\text{BMH}$ incolore, constituant un couple oxydant/réducteur. Lorsqu'on agite un mélange composé de $120\text{ mL}$ d'eau, $2\text{ g}$ d'hydroxyde de sodium, $3\text{ g}$ de glucose et quelques gouttes de bleu de méthylène, une couleur bleue apparaît instantanément, disparaît progressivement puis réapparaît si on agite...
+      </p>
+
+      <div class="figure-container">
+        <img src="images/bouteille_bleue_cycle.svg" alt="Cycle de réaction de la bouteille bleue">
+        <div class="caption">Figure 1 : Cycle d'oxydoréduction et alternance de couleur dans l'expérience de la bouteille bleue.</div>
+      </div>
+
+      <!-- Question 1.1 -->
+      <div class="question-block">
+        <div class="question-text">1. Écrire la demi-équation d’oxydoréduction relative à ce couple en milieu acide équilibrée avec les ions H⁺. Ajouter de chaque côté des ions hydroxyde HO⁻ pour l'adapter en milieu basique. Préciser l’oxydant et le réducteur.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.1)</summary>
+          <div class="answer-body">
+            <div class="callout callout-rappel">
+              <div class="callout-title">📌 Rappel de cours : Oxydant et Réducteur</div>
+              Un <strong>oxydant</strong> capte un ou plusieurs électrons ($	ext{Ox} + n e^- ightleftharpoons 	ext{Red}$). Un <strong>réducteur</strong> cède un ou plusieurs électrons.
+            </div>
+            <p><strong>Demi-équation en milieu acide :</strong></p>
+            $$\text{BM}^+_{(\text{aq})} + \text{H}^+_{(\text{aq})} + 2e^- \rightleftharpoons \text{BMH}_{(\text{aq})}$$
+            <p><strong>Adaptation en milieu basique :</strong></p>
+            <p>On ajoute $1\text{ HO}^-$ de chaque côté pour neutraliser l'ion $\text{H}^+$ :</p>
+            $$\text{BM}^+_{(\text{aq})} + (\text{H}^+ + \text{HO}^-) + 2e^- \rightleftharpoons \text{BMH}_{(\text{aq})} + \text{HO}^-_{(\text{aq})}$$
+            <div class="result-box">
+              $$\text{BM}^+_{(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} + 2e^- \rightleftharpoons \text{BMH}_{(\text{aq})} + \text{HO}^-_{(\text{aq})}$$
+            </div>
+            <p><strong>Identification :</strong></p>
+            <ul>
+              <li><strong>Oxydant :</strong> $\text{BM}^+$ (forme bleue, capte des électrons).</li>
+              <li><strong>Réducteur :</strong> $\text{BMH}$ (forme incolore, cède des électrons).</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 1.2 -->
+      <div class="question-block">
+        <div class="question-text">2. Le glucose C₆H₁₂O₆ est le réducteur conjugué de l’ion gluconate C₆H₁₁O₇⁻(aq). Adapter la demi-équation d’oxydoréduction de ce couple en milieu acide pour le milieu basique correspondant à l'expérience : C₆H₁₂O₆(aq) + H₂O(l) = C₆H₁₁O₇⁻(aq) + 3H⁺(aq) + 2e⁻.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.2)</summary>
+          <div class="answer-body">
+            <p>On part de la demi-équation donnée en milieu acide :</p>
+            $$\text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} = \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + 3\text{H}^+_{(\text{aq})} + 2e^-$$
+            <p>On ajoute $3\text{ HO}^-$ de chaque côté pour neutraliser les $3\text{ H}^+$ :</p>
+            $$\text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} + 3\text{HO}^-_{(\text{aq})} = \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + 3(\text{H}^+ + \text{HO}^-) + 2e^-$$
+            $$\text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} + 3\text{HO}^-_{(\text{aq})} = \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + 3\text{H}_2\text{O}_{(\text{l})} + 2e^-$$
+            <p>En simplifiant une molécule d'eau $\text{H}_2\text{O}$ de chaque côté, on obtient :</p>
+            <div class="result-box">
+              $$\text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + 3\text{HO}^-_{(\text{aq})} = \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + 2\text{H}_2\text{O}_{(\text{l})} + 2e^-$$
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 1.3 -->
+      <div class="question-block">
+        <div class="question-text">3. L’eau est le réducteur du couple O₂(aq)/H₂O(ℓ). Écrire la demi-équation d’oxydoréduction correspondante en milieu acide puis en milieu basique.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.3)</summary>
+          <div class="answer-body">
+            <p><strong>En milieu acide :</strong></p>
+            $$\text{O}_{2(\text{aq})} + 4\text{H}^+_{(\text{aq})} + 4e^- \rightleftharpoons 2\text{H}_2\text{O}_{(\text{l})}$$
+            <p><strong>En milieu basique :</strong></p>
+            <p>On ajoute $4\text{ HO}^-$ de chaque côté :</p>
+            $$\text{O}_{2(\text{aq})} + 4(\text{H}^+ + \text{HO}^-) + 4e^- \rightleftharpoons 2\text{H}_2\text{O}_{(\text{l})} + 4\text{HO}^-_{(\text{aq})}$$
+            $$\text{O}_{2(\text{aq})} + 4\text{H}_2\text{O}_{(\text{l})} + 4e^- \rightleftharpoons 2\text{H}_2\text{O}_{(\text{l})} + 4\text{HO}^-_{(\text{aq})}$$
+            <p>En simplifiant $2\text{H}_2\text{O}$ de chaque côté :</p>
+            <div class="result-box">
+              $$\text{O}_{2(\text{aq})} + 2\text{H}_2\text{O}_{(\text{l})} + 4e^- \rightleftharpoons 4\text{HO}^-_{(\text{aq})}$$
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 1.4 -->
+      <div class="question-block">
+        <div class="question-text">4. Une première réaction a lieu entre l’ion BM⁺ et le glucose. Écrire l’équation de cette réaction et indiquer le changement de couleur.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.4)</summary>
+          <div class="answer-body">
+            <p>On combine la réduction de $\text{BM}^+$ et l'oxydation du glucose en milieu basique :</p>
+            <div class="calculation-step">
+              $$\text{BM}^+_{(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} + 2e^- \rightarrow \text{BMH}_{(\text{aq})} + \text{HO}^-_{(\text{aq})} \quad (\times 1)$$
+              $$\text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + 3\text{HO}^-_{(\text{aq})} \rightarrow \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + 2\text{H}_2\text{O}_{(\text{l})} + 2e^- \quad (\times 1)$$
+            </div>
+            <p>En additionnant les deux demi-équations et en simplifiant les électrons ainsi qu'une molécule d me d'eau et un ion $\text{HO}^-$ :</p>
+            <div class="result-box">
+              $$\text{BM}^+_{(\text{aq})} + \text{C}_6\text{H}_{12}\text{O}_{6(\text{aq})} + 2\text{HO}^-_{(\text{aq})} \rightarrow \text{BMH}_{(\text{aq})} + \text{C}_6\text{H}_{11}\text{O}_{7(\text{aq})}^- + \text{H}_2\text{O}_{(\text{l})}$$
+            </div>
+            <p><strong>Changement de couleur :</strong> La solution passe de la couleur <strong>bleue</strong> (présence de $\text{BM}^+$) à l'<strong>incolore</strong> (formation de $\text{BMH}$).</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 1.5 -->
+      <div class="question-block">
+        <div class="question-text">5. Une seconde réaction a lieu entre le BMH produit et le dioxygène dissous dans l’eau. Écrire l’équation correspondante et indiquer le changement de couleur.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.5)</summary>
+          <div class="answer-body">
+            <p>On combine l'oxydation de $\text{BMH}$ et la réduction du dioxygène $\text{O}_2$ dissous :</p>
+            <div class="calculation-step">
+              $$\text{BMH}_{(\text{aq})} + \text{HO}^-_{(\text{aq})} \rightarrow \text{BM}^+_{(\text{aq})} + \text{H}_2\text{O}_{(\text{l})} + 2e^- \quad (\times 2)$$
+              $$\text{O}_{2(\text{aq})} + 2\text{H}_2\text{O}_{(\text{l})} + 4e^- \rightarrow 4\text{HO}^-_{(\text{aq})} \quad (\times 1)$$
+            </div>
+            <p>En additionnant les deux demi-équations et en simplifiant les électrons, l'eau et les ions $\text{HO}^-$ :</p>
+            <div class="result-box">
+              $$2\text{BMH}_{(\text{aq})} + \text{O}_{2(\text{aq})} \rightarrow 2\text{BM}^+_{(\text{aq})} + 2\text{HO}^-_{(\text{aq})}$$
+            </div>
+            <p><strong>Changement de couleur :</strong> La solution passe de l'<strong>incolore</strong> (forme $\text{BMH}$) au <strong>bleu</strong> (régénération de $\text{BM}^+$).</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 1.6 -->
+      <div class="question-block">
+        <div class="question-text">6. Identifier la transformation lente et la transformation rapide parmi ces deux réactions. Pourquoi la couleur bleue réapparaît instantanément quand on agite la bouteille redevenue incolore ?</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (1.6)</summary>
+          <div class="answer-body">
+            <p><strong>Identification des cinétiques :</strong></p>
+            <ul>
+              <li><strong>Réaction 1 (Glucose + BM⁺ $ightarrow$ BMH) :</strong> Transformation <strong>LENTE</strong>. Elle se déroule progressivement lorsque la bouteille est au repos.</li>
+              <li><strong>Réaction 2 (BMH + O₂ $ightarrow$ BM⁺) :</b> Transformation <strong>RAPIDE</strong>.</li>
+            </ul>
+            <p><strong>Explication du phénomène d'agitation :</strong></p>
+            <p>Au repos, la réaction lente consomme $\text{BM}^+$, rendant le liquide incolore. Lorsqu'on agite la bouteille, le dioxygène gazeux de l'air au-dessus de la solution se dissout très rapidement dans l'eau. Ce dioxygène dissous réagit de façon quasi-instantanée avec le $\text{BMH}$ incolore pour régénérer l'espèce bleue $\text{BM}^+$.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- EXERCICE 2 -->
+    <section class="card">
+      <h2>Exercice 2 : Réaction entre les ions iodure I⁻(aq) et le peroxyde d'hydrogène H₂O₂(aq)</h2>
+      
+      <p class="question-block">
+        <strong>Énoncé :</strong> On dispose d’une solution d’iodure de potassium $\text{KI}$ ($C_1 = 0,20\text{ mol}\cdot\text{L}^{-1}$) et d’une solution d’acide sulfurique $\text{H}_2\text{SO}_4$ ($C_2 = 0,50\text{ mol}\cdot\text{L}^{-1}$). Dans trois béchers (1, 2, 3), on réalise les mélanges suivants :
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Composition des mélanges</th>
+            <th>Bécher 1</th>
+            <th>Bécher 2</th>
+            <th>Bécher 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$V(\text{KI})$ (mL)</td>
+            <td>10</td>
+            <td>20</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>$V(\text{acide})$ (mL)</td>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>$V(\text{eau})$ (mL)</td>
+            <td>30</td>
+            <td>20</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>À $t = 0\text{ s}$, on ajoute dans chaque bécher un volume $V = 50\text{ mL}$ d’eau oxygénée ($C_3 = 1,0 \times 10^{-2}\text{ mol}\cdot\text{L}^{-1}$). Après une à deux minutes, une coloration jaune s’intensifie du bécher 1 au bécher 3.</p>
+
+      <div class="figure-container">
+        <img src="images/facteurs_cinetiques_bechers.svg" alt="Influence de la concentration initiale sur la vitesse de réaction">
+        <div class="caption">Figure 2 : Comparaison de la coloration jaune (diiode formé) selon la concentration initiale en ions iodure.</div>
+      </div>
+
+      <!-- Question 2.1 -->
+      <div class="question-block">
+        <div class="question-text">1. Couples oxydant/réducteur : I₂(aq)/I⁻(aq) et H₂O₂(aq)/H₂O(ℓ). Montrer que l'équation de la réaction est H₂O₂(aq) + 2I⁻(aq) + 2H⁺(aq) → I₂(aq) + 2H₂O(l) et justifier la coloration jaune.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (2.1)</summary>
+          <div class="answer-body">
+            <p><strong>Demi-équations d'oxydoréduction :</strong></p>
+            $$\text{H}_2\text{O}_{2(\text{aq})} + 2\text{H}^+_{(\text{aq})} + 2e^- \rightarrow 2\text{H}_2\text{O}_{(\text{l})} \quad (\text{réduction de } \text{H}_2\text{O}_2)$$
+            $$2\text{I}^-_{(\text{aq})} \rightarrow \text{I}_{2(\text{aq})} + 2e^- \quad (\text{oxydation de } \text{I}^-)$$
+            <p><strong>Équation bilan :</strong></p>
+            <div class="result-box">
+              $$\text{H}_2\text{O}_{2(\text{aq})} + 2\text{I}^-_{(\text{aq})} + 2\text{H}^+_{(\text{aq})} \rightarrow \text{I}_{2(\text{aq})} + 2\text{H}_2\text{O}_{(\text{l})}$$
+            </div>
+            <p><strong>Justification de la couleur :</strong> Le diiode formé $\text{I}_{2(\text{aq})}$ possède une couleur jaune en solution diluée (et brune lorsqu'il est plus concentré). La formation progressive de $\text{I}_2$ explique l'apparition et l'intensification de la coloration jaune.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 2.2 -->
+      <div class="question-block">
+        <div class="question-text">2. Calculer les concentrations molaires volumiques initiales des réactifs dans les trois mélanges.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (2.2)</summary>
+          <div class="answer-body">
+            <div class="callout callout-methode">
+              <div class="callout-title">💡 Méthode : Calcul du Volume Total</div>
+              Dans chaque bécher, le volume total du mélange vaut :<br>
+              $V_{\text{total}} = V(\text{KI}) + V(\text{acide}) + V(\text{eau}) + V(\text{H}_2\text{O}_2) = 100\text{ mL} = 0,100\text{ L}$.
+            </div>
+
+            <p><strong>1. Concentration initiale en eau oxygénée $[\text{H}_2\text{O}_2]_0$ :</strong></p>
+            $$n(\text{H}_2\text{O}_2)_0 = C_3 \cdot V(\text{H}_2\text{O}_2) = 1,0 \times 10^{-2} \times 0,050 = 5,0 \times 10^{-4}\text{ mol}$$
+            <div class="result-box">
+              $$[\text{H}_2\text{O}_2]_0 = \frac{5,0 \times 10^{-4}}{0,100} = 5,0 \times 10^{-3}\text{ mol}\cdot\text{L}^{-1} \quad (\text{identique dans les 3 béchers})$$
+            </div>
+
+            <p><strong>2. Concentration initiale en ions oxonium $[\text{H}^+]_0$ :</strong></p>
+            <p>L'acide sulfurique $\text{H}_2\text{SO}_4$ apporte $2\text{ H}^+$ par mole d'acide :</p>
+            $$n(\text{H}^+)_0 = 2 \cdot C_2 \cdot V(\text{acide}) = 2 \times 0,50 \times 0,010 = 1,0 \times 10^{-2}\text{ mol}$$
+            <div class="result-box">
+              $$[\text{H}^+]_0 = \frac{1,0 \times 10^{-2}}{0,100} = 0,10\text{ mol}\cdot\text{L}^{-1} \quad (\text{identique dans les 3 béchers})$$
+            </div>
+
+            <p><strong>3. Concentration initiale en ions iodure $[\text{I}^-]_0$ :</strong></p>
+            <ul>
+              <li><strong>Bécher 1 :</strong> $[\text{I}^-]_{0,1} = \frac{0,20 \times 0,010}{0,100} = 2,0 \times 10^{-2}\text{ mol}\cdot\text{L}^{-1}$</li>
+              <li><strong>Bécher 2 :</strong> $[\text{I}^-]_{0,2} = \frac{0,20 \times 0,020}{0,100} = 4,0 \times 10^{-2}\text{ mol}\cdot\text{L}^{-1}$</li>
+              <li><strong>Bécher 3 :</strong> $[\text{I}^-]_{0,3} = \frac{0,20 \times 0,030}{0,100} = 6,0 \times 10^{-2}\text{ mol}\cdot\text{L}^{-1}$</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 2.3 -->
+      <div class="question-block">
+        <div class="question-text">3. Justifier les différences de vitesse d’intensification de la coloration jaune entre les béchers 1, 2 et 3.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (2.3)</summary>
+          <div class="answer-body">
+            <p><strong>Facteur cinétique mis en évidence :</strong> La <strong>concentration initiale des réactifs</strong>.</p>
+            <p>La concentration initiale en ions iodure $[\text{I}^-]_0$ augmente du bécher 1 au bécher 3 ($0,020 < 0,040 < 0,060\text{ mol}\cdot\text{L}^{-1}$). Plus la concentration des réactifs est élevée, plus le nombre de chocs efficaces par seconde entre les réactifs augmente, ce qui accroît la vitesse de réaction. C'est pourquoi la coloration jaune apparaît le plus rapidement dans le bécher 3.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Question 2.4 -->
+      <div class="question-block">
+        <div class="question-text">4. Démontrer que l’eau oxygénée est le réactif en défaut dans tous les béchers. En déduire la quantité de matière et la concentration finale en diiode dans chaque bécher. Que dire des couleurs finales des béchers ?</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (2.4)</summary>
+          <div class="answer-body">
+            <p><strong>Démonstration du réactif en défaut :</strong></p>
+            <p>Comparons les rapports stœchiométriques initiaux $\frac{n_0}{a}$ :</p>
+            <ul>
+              <li>Pour $\text{H}_2\text{O}_2$ : $\frac{n(\text{H}_2\text{O}_2)_0}{1} = 5,0 \times 10^{-4}\text{ mol}$</li>
+              <li>Pour $\text{H}^+$ : $\frac{n(\text{H}^+)_0}{2} = \frac{1,0 \times 10^{-2}}{2} = 5,0 \times 10^{-3}\text{ mol}$</li>
+              <li>Pour $\text{I}^-$ (au minimum, Bécher 1) : $\frac{n(\text{I}^-)_0}{2} = \frac{2,0 \times 10^{-3}}{2} = 1,0 \times 10^{-3}\text{ mol}$</li>
+            </ul>
+            <p>Dans tous les béchers, $\frac{n(\text{H}_2\text{O}_2)_0}{1} < \frac{n(\text{I}^-)_0}{2}$ et $\frac{n(\text{H}_2\text{O}_2)_0}{1} < \frac{n(\text{H}^+)_0}{2}$.</p>
+            <div class="result-box">
+              L'eau oxygénée $\text{H}_2\text{O}_2$ est donc le <strong>réactif en défaut (limitant)</strong> dans tous les béchers.
+            </div>
+
+            <p><strong>Quantité et concentration finale en diiode $\text{I}_2$ :</strong></p>
+            $$x_{\text{max}} = n(\text{H}_2\text{O}_2)_0 = 5,0 \times 10^{-4}\text{ mol}$$
+            $$n(\text{I}_2)_{\text{final}} = x_{\text{max}} = 5,0 \times 10^{-4}\text{ mol}$$
+            <div class="result-box">
+              $$[\text{I}_2]_{\text{final}} = \frac{5,0 \times 10^{-4}}{0,100} = 5,0 \times 10^{-3}\text{ mol}\cdot\text{L}^{-1} \quad (\text{dans les 3 béchers})$$
+            </div>
+
+            <p><strong>Teinte et couleur finale des béchers :</strong></p>
+            <p>Puisque la concentration finale en diiode $[\text{I}_2]_{\text{final}}$ est <strong>rigoureusement identique</strong> dans les trois béchers, <strong>les trois béchers auront exactement la même couleur jaune/brune à la fin de la réaction</strong>. Seul le temps nécessaire pour atteindre cet état final diffère.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Tableau Récapitulatif -->
+    <section class="card">
+      <h2>🏆 Fiche Synthèse Récapitulative</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Exercice / Question</th>
+            <th>Notion clé</th>
+            <th>Résultat / Conclusion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Ex 1 - Bouteille Bleue</strong></td>
+            <td>Oxydoréduction & Milieu Basique</td>
+            <td>$\text{BM}^+ + \text{C}_6\text{H}_{12}\text{O}_6 + 2\text{HO}^- \rightarrow \text{BMH} + \text{C}_6\text{H}_{11}\text{O}_7^- + \text{H}_2\text{O}$</td>
+          </tr>
+          <tr>
+            <td><strong>Ex 1 - Cinétique</strong></td>
+            <td>Vitesse lente vs rapide</td>
+            <td>Décoloration lente au repos par glucose ; Recoloration rapide par $\text{O}_2$ lors de l'agitation.</td>
+          </tr>
+          <tr>
+            <td><strong>Ex 2 - $[\text{H}_2\text{O}_2]_0$</strong></td>
+            <td>Dilution dans $V_{\text{total}} = 100\text{ mL}$</td>
+            <td>$[\text{H}_2\text{O}_2]_0 = 5,0 \times 10^{-3}\text{ mol}\cdot\text{L}^{-1}$ (identique)</td>
+          </tr>
+          <tr>
+            <td><strong>Ex 2 - $[\text{I}^-]_0$</strong></td>
+            <td>Concentrations initiales</td>
+            <td>B1: $0,020\text{ M}$ ; B2: $0,040\text{ M}$ ; B3: $0,060\text{ M}$</td>
+          </tr>
+          <tr>
+            <td><strong>Ex 2 - Vitesse</strong></td>
+            <td>Facteur cinétique</td>
+            <td>Vitesse $B3 > B2 > B1$ car $[\text{I}^-]_0$ est supérieure dans le bécher 3.</td>
+          </tr>
+          <tr>
+            <td><strong>Ex 2 - État Final</strong></td>
+            <td>Réactif limitant $\text{H}_2\text{O}_2$</td>
+            <td>$[\text{I}_2]_{\text{final}} = 5,0 \times 10^{-3}\text{ mol}\cdot\text{L}^{-1} \implies$ <strong>Couleur finale identique</strong> pour les 3 béchers.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Corrigé rédigé pour Terminale Spécialité Physique-Chimie • Présentation interactive HTML / CSS / MathJax 3</p>
+    </footer>
+
+  </div>
+</body>
+</html>
