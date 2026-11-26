@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corrigé Détaillé : Devoir Chapitre 11 - Piles & Corrosion du Fer</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Integration MathJax 3 avec le module mhchem -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        packages: {'[+]': ['mhchem']}
+      },
+      loader: { load: ['[tex]/mhchem'] }
+    };
+  </script>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+<body>
+  <div class="container">
+    
+    <!-- En-tête principal -->
+    <header>
+      <h1>🧪 Chimie - Corrigé Détaillé et Explicatif</h1>
+      <div class="subtitle">Contrôle du Chapitre 11 : Piles Électrochimiques & Protection contre la Corrosion</div>
+      <div class="meta-tags">
+        <span class="tag">Niveau : Terminale Spécialité PC</span>
+        <span class="tag">Pile AgCl / Ag & Fe²⁺ / Fe</span>
+        <span class="tag">Quotient de réaction Q_r & Critère d'évolution</span>
+        <span class="tag">Protection cathodique & Anode sacrificielle</span>
+        <span class="tag">Syntaxe mhchem (\ce{...})</span>
+      </div>
+    </header>
+
+    <!-- Carte Énoncé Complet -->
+    <section class="card">
+      <h2>📋 Énoncé Complet du Contrôle (Chapitre 11)</h2>
+      
+      <h3>1. Utilisation du couple \ce{AgCl (s) / Ag (s)} dans une pile</h3>
+      <p><strong>1.1.</strong> Écrire la demi-équation d'oxydoréduction associée au couple \ce{Ag+ (aq) / Ag (s)}.</p>
+      <p><strong>1.2.</strong> Sachant que \ce{AgCl (s)} se dissout partiellement dans l'eau selon la réaction \ce{AgCl (s) = Ag+ (aq) + Cl- (aq)}, compléter la demi-équation d'oxydoréduction pour le couple \ce{AgCl (s) / Ag (s)} obtenue en combinant la demi-équation de l'ion libre dissous et l'équation d'équilibre de dissolution du solide :</p>
+      <div class="result-box" style="text-align: center;">
+        $$\ce{AgCl (s) + ....... = Ag (s) + Cl- (aq)}$$
+      </div>
+      <p><strong>1.3.</strong> En déduire l'équation de la réaction d'oxydation du fer \ce{Fe (s)} en ions ferreux \ce{Fe^2+ (aq)} par \ce{AgCl (s)}.</p>
+
+      <div class="callout callout-rappel">
+        <div class="callout-title">📌 Données & Contexte expérimental :</div>
+        <p>• La constante d'équilibre de cette réaction vaut $K = 10^{22}$.<br>
+        On réalise la pile suivante (pont salin : solution $\ce{K+ (aq) + Cl- (aq)}$ saturée et gélifiée) :</p>
+        <ul>
+          <li><strong>Le bécher ①</strong> contient une solution de sel de Mohr (ions \ce{Fe^2+ (aq)} de concentration $C_1 = 1,0 \times 10^{-5} \text{ mol}\cdot\text{L}^{-1}$), avec une électrode de fer \ce{Fe (s)}.</li>
+          <li><strong>Le bécher ②</strong> contient de l'eau et le solide \ce{AgCl (s)} partiellement dissous : la concentration des ions \ce{Cl- (aq)} vaut $C_2 = 1,0 \times 10^{-5} \text{ mol}\cdot\text{L}^{-1}$, avec une électrode d'argent \ce{Ag (s)}.</li>
+        </ul>
+      </div>
+
+      <p><strong>1.4.</strong> Calculer le quotient de réaction initial, déterminer le sens de réaction, l'anode et la cathode et la polarité de cette pile.</p>
+      <p><strong>1.5.</strong> Ajouter un ampèremètre pour fermer le circuit et indiquer le sens des porteurs de charges dans les fils, les béchers et le pont salin.</p>
+
+      <hr>
+
+      <h3>2. Protection du fer contre la corrosion</h3>
+      <div class="callout callout-rappel">
+        <div class="callout-title">📌 Données expérimentales :</div>
+        <p>Dans les conditions de notre étude :</p>
+        <ul>
+          <li>Le pôle positif de la pile $\ce{Zn (s) / Zn^2+ (aq) // Fe^2+ (aq) / Fe (s)}$ est le <strong>fer</strong>.</li>
+          <li>Le pôle négatif de la pile $\ce{Fe (s) / Fe^2+ (aq) // Ni^2+ (aq) / Ni (s)}$ est le <strong>fer</strong>.</li>
+        </ul>
+      </div>
+
+      <p><strong>2.1.</strong> Expliquer pourquoi la fixation d'un morceau de zinc sur la coque d'un navire en acier (dont le fer est la principale composante) protège celle-ci de la corrosion (c'est-à-dire de l'oxydation) avec la notion de pile et de court-circuit.</p>
+      <p><strong>2.2.</strong> On peut protéger une pièce d'acier vis-à-vis de la corrosion par nickelage (dépôt d'une couche fine de nickel). On constate que cette protection est inefficace si le dépôt présente une imperfection qui fait apparaître le support en acier. Expliquer ce résultat en écrivant l'équation d'oxydoréduction de la pile constituée.</p>
+      <p><strong>2.3.</strong> Si le revêtement qui couvre l'acier est cette fois une couche de zinc (galvanisation), alors la protection est efficace même si le dépôt de zinc est abîmé. Jusqu'à quand cette protection sera-t-elle efficace contre la rouille du fer ?</p>
+    </section>
+
+    <!-- Fiche des notions essentielles du cours -->
+    <section class="card">
+      <h2>💡 Notions Essentielles du Cours à Maîtriser</h2>
+      
+      <div class="concept-box">
+        <h4>1. Écritures des demi-équations d'oxydoréduction (Règle du signe =)</h4>
+        <p>Une demi-équation d'oxydoréduction traduit un échange d'électrons entre l'oxydant et le réducteur d'un même couple $\ce{Ox / Red}$ :</p>
+        <div class="result-box" style="text-align: center;">
+          $$\ce{Ox + n e- = Red}$$
+        </div>
+        <p><strong>Règle stricte du Bac :</strong> Une demi-équation s'écrit obligatoirement avec le signe <strong>=</strong> (et non $\rightarrow$ ou $\rightleftharpoons$). La flèche simple $\rightarrow$ est réservée à l'équation-bilan de la réaction globale spontanée.</p>
+      </div>
+
+      <div class="concept-box">
+        <h4>2. Quotient de réaction $Q_r$ et Critère d'évolution spontanée</h4>
+        <p>Pour une réaction chimique d'équation $\ce{\alpha A + \beta B -> \gamma C + \delta D}$, le quotient de réaction $Q_r$ s'exprime par :</p>
+        $$\text{Q}_r = \frac{[\ce{C}]^\gamma \cdot [\ce{D}]^\delta}{[\ce{A}]^\alpha \cdot [\ce{B}]^\beta}$$
+        <p><em>Rappel d'activité :</em> Les solides purs (ex: $\ce{Fe (s)}$, $\ce{Ag (s)}$, $\ce{AgCl (s)}$) et le solvant eau $\ce{H2O (l)}$ ont une activité égale à $1$ et n'apparaissent pas dans l'expression de $Q_r$.</p>
+        <ul>
+          <li>Si $Q_{r,i} < K$ : Le système évolue spontanément dans le <strong>sens direct (sens 1)</strong>.</li>
+          <li>Si $Q_{r,i} > K$ : Le système évolue spontanément dans le <strong>sens inverse (sens 2)</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="concept-box">
+        <h4>3. Fonctionnement d'une pile et polarité</h4>
+        <p>Dans une pile électrochimique en fonctionnement (circuit fermé) :</p>
+        <ul>
+          <li><strong>Anode (Pôle négatif -) :</strong> Lieu de l'<strong>oxydation</strong> (libération d'électrons $\text{Red}_1 = \text{Ox}_1 + n_1 \text{e}^-$).</li>
+          <li><strong>Cathode (Pôle positif +) :</strong> Lieu de la <strong>réduction</strong> (consommation d'électrons $\text{Ox}_2 + n_2 \text{e}^- = \text{Red}_2$).</li>
+          <li><strong>Circulation des porteurs de charge :</strong>
+            <ul>
+              <li>Dans le circuit extérieur (fils + ampèremètre) : les <strong>électrons $\ce{e-}$</strong> circulent du pôle $-$ (anode) vers le pôle $+$ (cathode). Le courant conventionnel $I$ circule en sens inverse (du $+$ vers le $-$).</li>
+              <li>Dans les solutions et le pont salin : les <strong>cations</strong> migrent vers le compartiment cathodique ($+$) et les <strong>anions</strong> migrent vers le compartiment anodique ($-$) pour maintenir l'électroneutralité.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div class="concept-box">
+        <h4>4. Protection contre la corrosion (Anode sacrificielle vs Corrosion galvanique)</h4>
+        <p>La corrosion du fer est son oxydation en ions $\ce{Fe^2+ (aq)}$ (puis formation de rouille $\ce{Fe2O3\cdot nH2O}$).</p>
+        <ul>
+          <li><strong>Protection par anode sacrificielle (Zinc / Galvanisation) :</strong> Le zinc $\ce{Zn}$ est un réducteur plus fort que le fer $\ce{Fe}$ ($E^\circ(\ce{Zn^2+/Zn}) < E^\circ(\ce{Fe^2+/Fe})$). Mis en contact électrique (court-circuit), le zinc constitue l'anode ($-$) et s'oxyde spontanément à la place du fer. Le fer, classé à la cathode ($+$), est totalement protégé.</li>
+          <li><strong>Corrosion galvanique (Nickelage abîmé) :</strong> Le fer $\ce{Fe}$ est un réducteur plus fort que le nickel $\ce{Ni}$ ($E^\circ(\ce{Fe^2+/Fe}) < E^\circ(\ce{Ni^2+/Ni})$). En cas de rayure mettant l'acier à nu, le fer joue le rôle d'anode ($-$) et se corrode de manière accélérée au niveau de l'imperfection.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 1. Utilisation du couple AgCl/Ag -->
+    <section class="card">
+      <h2>1. Utilisation du couple AgCl(s) / Ag(s) dans une pile</h2>
+      
+      <!-- Q1.1 -->
+      <div class="question-block">
+        <div class="question-text">1.1. Écrire la demi-équation d'oxydoréduction associée au couple Ag⁺(aq) / Ag(s).</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q1.1)</summary>
+          <div class="answer-body">
+            <div class="callout callout-rappel">
+              <div class="callout-title">📌 Rappel de méthode : Demi-équation ionique</div>
+              L'ion argent $\ce{Ag+ (aq)}$ est l'oxydant (forme gagnant $1\text{ e}^-$) et l'argent métallique $\ce{Ag (s)}$ est le réducteur.
+            </div>
+            <p>La demi-équation d'oxydoréduction s'écrit avec le signe <strong>=</strong> :</p>
+            <div class="result-box">
+              $$\ce{Ag+ (aq) + e- = Ag (s)}$$
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q1.2 -->
+      <div class="question-block">
+        <div class="question-text">1.2. Sachant que AgCl(s) se dissout partiellement selon AgCl(s) = Ag⁺(aq) + Cl⁻(aq), compléter la demi-équation d'oxydoréduction pour le couple AgCl(s) / Ag(s).</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q1.2)</summary>
+          <div class="answer-body">
+            <p><strong>Démonstration par combinaison d'équations :</strong></p>
+            <p>On associe la demi-équation de réduction de l'ion argent libre et la réaction d'équilibre de dissolution du chlorure d'argent :</p>
+            <div class="calculation-step">
+              $$\begin{array}{rcl}
+              \ce{Ag+ (aq) + e-} & = & \ce{Ag (s)} \
+              \ce{AgCl (s)} & = & \ce{Ag+ (aq) + Cl- (aq)} \
+              \hline
+              \ce{AgCl (s) + Ag+ (aq) + e-} & = & \ce{Ag (s) + Ag+ (aq) + Cl- (aq)}
+              \end{array}$$
+            </div>
+            <p>En simplifiant les ions $\ce{Ag+ (aq)}$ présents des deux côtés de l'égalité, on obtient la demi-équation complétée demandée :</p>
+            <div class="result-box">
+              $$\ce{AgCl (s) + e- = Ag (s) + Cl- (aq)}$$
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q1.3 -->
+      <div class="question-block">
+        <div class="question-text">1.3. En déduire l'équation de la réaction d'oxydation du fer Fe en ions ferreux Fe²⁺(aq) par AgCl(s).</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q1.3)</summary>
+          <div class="answer-body">
+            <p><strong>Étape 1 : Écriture des deux demi-équations d'oxydoréduction</strong></p>
+            <ul>
+              <li>Oxydation du fer métallique $\ce{Fe (s)}$ en ions ferreux $\ce{Fe^2+ (aq)}$ (libération de $2\text{ e}^-$) :
+                $$\ce{Fe (s) = Fe^2+ (aq) + 2 e-}$$
+              </li>
+              <li>Réduction du chlorure d'argent $\ce{AgCl (s)}$ en argent métallique $\ce{Ag (s)}$ (gain de $1\text{ e}^-$) :
+                $$\ce{AgCl (s) + e- = Ag (s) + Cl- (aq)} \quad \times 2$$
+              </li>
+            </ul>
+            <p><strong>Étape 2 : Équation-bilan globale de la réaction</strong></p>
+            <p>Pour équilibrer le nombre d'électrons échangés ($2\text{ e}^-$), on multiplie la demi-équation de réduction par 2 avant d'additionner membre à membre :</p>
+            <div class="result-box">
+              $$\ce{Fe (s) + 2 AgCl (s) -> Fe^2+ (aq) + 2 Ag (s) + 2 Cl- (aq)}$$
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q1.4 -->
+      <div class="question-block">
+        <div class="question-text">1.4. Calculer le quotient de réaction initial, déterminer le sens de réaction, l'anode et la cathode et la polarité de cette pile.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q1.4)</summary>
+          <div class="answer-body">
+            <p><strong>1. Calcul du quotient de réaction initial $Q_{r,i}$ :</strong></p>
+            <p>L'équation de réaction est : $\ce{Fe (s) + 2 AgCl (s) -> Fe^2+ (aq) + 2 Ag (s) + 2 Cl- (aq)}$.<br>
+            Les solides $\ce{Fe (s)}$, $\ce{AgCl (s)}$ et $\ce{Ag (s)}$ ont une activité égale à $1$. L'expression de $Q_r$ ne fait intervenir que les espèces dissoutes en solution :</p>
+            <div class="calculation-step">
+              $$\text{Q}_{r,i} = \frac{[\ce{Fe^2+}]_i \cdot [\ce{Cl-}]_i^2}{(c^\circ)^3}$$
+            </div>
+            <p>Données numériques : $[\ce{Fe^2+}]_i = 1,0 \times 10^{-5} \text{ mol}\cdot\text{L}^{-1}$ et $[\ce{Cl-}]_i = 1,0 \times 10^{-5} \text{ mol}\cdot\text{L}^{-1}$ :</p>
+            <div class="calculation-step">
+              $$\text{Q}_{r,i} = (1,0 \times 10^{-5}) \times (1,0 \times 10^{-5})^2 = 1,0 \times 10^{-15}$$
+            </div>
+            <div class="result-box">
+              $$\text{Q}_{r,i} = 1,0 \times 10^{-15}$$
+            </div>
+
+            <p><strong>2. Sens d'évolution spontanée du système :</strong></p>
+            <p>On compare $Q_{r,i}$ à la constante d'équilibre $K = 10^{22}$ :</p>
+            $$\text{Q}_{r,i} = 1,0 \times 10^{-15} \ll K = 10^{22}$$
+            <p>Comme $Q_{r,i} < K$, le système chimique évolue <strong>spontanément dans le sens direct (sens 1)</strong>, c'est-à-dire de la gauche vers la droite.</p>
+
+            <p><strong>3. Identification des électrodes et polarité de la pile :</strong></p>
+            <ul>
+              <li><strong>Anode (Pôle négatif -) :</strong> Dans le bécher ①, le fer s'oxyde ($\ce{Fe (s) -> Fe^2+ (aq) + 2 e-}$). L'oxydation se produit à l'anode. L'électrode de fer $\ce{Fe}$ est donc l'<strong>anode</strong> et constitue le <strong>pôle négatif (-)</strong> de la pile.</li>
+              <li><strong>Cathode (Pôle positif +) :</strong> Dans le bécher ②, le chlorure d'argent se réduit ($\ce{AgCl (s) + e- -> Ag (s) + Cl- (aq)}$). La réduction se produit à la cathode. L'électrode d'argent $\ce{Ag}$ est donc la <strong>cathode</strong> et constitue le <strong>pôle positif (+)</strong> de la pile.</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q1.5 -->
+      <div class="question-block">
+        <div class="question-text">1.5. Ajouter un ampèremètre pour fermer le circuit et indiquer le sens des porteurs de charges dans les fils, les béchers et le pont salin.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q1.5)</summary>
+          <div class="answer-body">
+            <div class="figure-container">
+              <img src="images/pile_fe_ag.svg" alt="Schéma expérimental détaillé de la pile Fe / Fe²⁺ // AgCl / Ag">
+              <div class="caption">Figure 1 : Schéma complet de la pile électrochimique montrant la polarité, le sens des électrons e⁻, du courant I et la migration des ions dans le pont salin.</div>
+            </div>
+
+            <p><strong>Description du mouvement des porteurs de charges :</strong></p>
+            <ul>
+              <li><strong>Dans le circuit électrique extérieur (fils + ampèremètre) :</strong>
+                <ul>
+                  <li>Les <strong>électrons $\ce{e-}$</strong> circulent du pôle négatif (anode de fer $\ce{Fe}$) vers le pôle positif (cathode d'argent $\ce{Ag}$).</li>
+                  <li>Le <strong>courant conventionnel $I$</strong> circule dans le sens inverse, du pôle positif ($\ce{Ag}$) vers le pôle négatif ($\ce{Fe}$).</li>
+                </ul>
+              </li>
+              <li><strong>Dans les solutions aqueuses et le pont salin ($\ce{K+ (aq) + Cl- (aq)}$) :</strong>
+                <ul>
+                  <li>Les <strong>anions $\ce{Cl-}$</strong> du pont salin migrent vers le bécher ① (anode de fer) pour compenser l'apparition des cations $\ce{Fe^2+ (aq)}$ et maintenir l'électroneutralité.</li>
+                  <li>Les <strong>cations $\ce{K+}$</strong> du pont salin migrent vers le bécher ② (cathode d'argent) pour équilibrer la libération des anions $\ce{Cl- (aq)}$.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- 2. Protection du fer contre la corrosion -->
+    <section class="card">
+      <h2>2. Protection du fer contre la corrosion</h2>
+
+      <div class="figure-container">
+        <img src="images/corrosion_protection_zinc_nickel.svg" alt="Schéma de la protection cathodique par Zinc et du risque de corrosion par Nickelage abîmé">
+        <div class="caption">Figure 2 : Comparaison du fonctionnement d'une anode sacrificielle en Zinc (Galvanisation) et d'une protection par Nickelage abîmé.</div>
+      </div>
+      
+      <!-- Q2.1 -->
+      <div class="question-block">
+        <div class="question-text">2.1. Expliquer pourquoi la fixation d'un morceau de zinc sur la coque d'un navire en acier protège celle-ci de la corrosion avec la notion de pile et de court-circuit.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q2.1)</summary>
+          <div class="answer-body">
+            <div class="callout callout-rappel">
+              <div class="callout-title">📌 Donnée du sujet : Polarité de la pile Zn / Fe</div>
+              Le sujet indique que pour la pile $\ce{Zn / Zn^2+ // Fe^2+ / Fe}$, le pôle positif est le <strong>fer</strong>. Le zinc constitue donc le <strong>pôle négatif (-)</strong>.
+            </div>
+            <p><strong>Explication détaillée :</strong></p>
+            <p>Lorsqu'un bloc de zinc est fixé directement sur la coque en acier (composée majoritairement de fer) et immergé dans l'eau de mer (eau + sels minéraux), l'ensemble forme une <strong>pile électrochimique en court-circuit</strong> :</p>
+            <ul>
+              <li><strong>Le zinc (pôle négatif / Anode) :</strong> Le zinc étant plus réducteur que le fer, il joue le rôle d'anode. Il subit l'oxydation en cédant ses électrons :
+                $$\ce{Zn (s) = Zn^2+ (aq) + 2 e-}$$
+              </li>
+              <li><strong>Le fer (pôle positif / Cathode) :</strong> Le fer joue le rôle de cathode. Il ne subit aucune oxydation (corrosion) car c'est à sa surface que les électrons libérés par le zinc sont consommés par la réduction du dioxygène dissous dans l'eau ($\ce{O2 (aq) + 2 H2O (l) + 4 e- = 4 HO- (aq)}$).</li>
+            </ul>
+            <div class="result-box">
+              💡 <strong>Conclusion :</strong> Le zinc s'oxyde préférentiellement et se détruit progressivement à la place de la coque en acier. On dit que le zinc agit comme une <strong>anode sacrificielle</strong> (protection cathodique).
+            </div>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q2.2 -->
+      <div class="question-block">
+        <div class="question-text">2.2. On protège une pièce d'acier par nickelage. Si le dépôt présente une imperfection, la protection est inefficace. Expliquer ce résultat en écrivant l'équation d'oxydoréduction de la pile constituée.</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q2.2)</summary>
+          <div class="answer-body">
+            <div class="callout callout-piege">
+              <div class="callout-title">⚠️ Donnée du sujet : Polarité de la pile Fe / Ni</div>
+              Le sujet indique que pour la pile $\ce{Fe / Fe^2+ // Ni^2+ / Ni}$, le pôle négatif est le <strong>fer</strong>. Le fer est donc plus réducteur que le nickel !
+            </div>
+            <p><strong>Analyse en cas d'imperfection / rayure :</strong></p>
+            <p>Si la couche de nickel présente une rayure ou une imperfection mettant l'acier à nu en présence d'humidité, il se forme une pile locale $\ce{Fe / Ni}$ en court-circuit :</p>
+            <ul>
+              <li><strong>Anode (pôle négatif - : Fer) :</strong> Le fer, étant le pôle négatif, subit l'oxydation anodique :
+                $$\ce{Fe (s) = Fe^2+ (aq) + 2 e-} \quad \times 2$$
+              </li>
+              <li><strong>Cathode (pôle positif + : Nickel) :</strong> À la surface du nickel se produit la réduction du dioxygène dissous :
+                $$\ce{O2 (aq) + 2 H2O (l) + 4 e- = 4 HO- (aq)}$$
+              </li>
+            </ul>
+            <p><strong>Équation-bilan d'oxydoréduction de la pile constituée :</strong></p>
+            <div class="result-box">
+              $$\ce{2 Fe (s) + O2 (aq) + 2 H2O (l) -> 2 Fe^2+ (aq) + 4 HO- (aq)}$$
+            </div>
+            <p>Les ions $\ce{Fe^2+ (aq)}$ et $\ce{HO- (aq)}$ formés réagissent ensuite pour former du précipité d'hydroxyde de fer \ce{Fe(OH)2 (s)} qui s'oxyde rapidement en rouille (\ce{Fe2O3\cdot nH2O}).</p>
+            <p><strong>Conclusion :</strong> L'imperfection localise et <strong>accélère la corrosion du fer</strong> au niveau de la rayure (corrosion galvanique). Le nickelage devient totalement inefficace dès qu'il est abîmé.</p>
+          </div>
+        </details>
+      </div>
+
+      <!-- Q2.3 -->
+      <div class="question-block">
+        <div class="question-text">2.3. Si le revêtement est une couche de zinc (galvanisation), la protection est efficace même si le dépôt est abîmé. Jusqu'à quand cette protection sera-t-elle efficace contre la rouille ?</div>
+        <details>
+          <summary>👉 Voir la réponse détaillée et explications (Q2.3)</summary>
+          <div class="answer-body">
+            <p><strong>Explication du mécanisme :</strong></p>
+            <p>Même si la couche de galvanisation (zinc) est rayée ou abîmée, le zinc reste le réducteur le plus fort ($E^\circ(\ce{Zn^2+/Zn}) < E^\circ(\ce{Fe^2+/Fe})$). Le zinc continue d'être l'anode et de s'oxyder préférentiellement, protégeant le fer mis à nu au niveau de la rayure.</p>
+            <div class="result-box">
+              🏆 <strong>Durée d'efficacité :</strong> La protection contre la rouille du fer reste efficace <strong>tant qu'il reste du zinc</strong> en contact électrique avec la pièce en acier. La corrosion du fer ne commencera qu'une fois la totalité du zinc entièrement consommée (oxydée).
+            </div>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <!-- Tableau Récapitulatif -->
+    <section class="card">
+      <h2>🏆 Fiche Synthèse Récapitulative des Résultats</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Exercice / Question</th>
+            <th>Résultat principal / Équation</th>
+            <th>Notion clé associée</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Q1.1 - Demi-éq. Ag⁺/Ag</strong></td>
+            <td>$$\ce{Ag+ (aq) + e- = Ag (s)}$$</td>
+            <td>Écriture avec le signe <strong>=</strong></td>
+          </tr>
+          <tr>
+            <td><strong>Q1.2 - Demi-éq. AgCl/Ag</strong></td>
+            <td>$$\ce{AgCl (s) + e- = Ag (s) + Cl- (aq)}$$</td>
+            <td>Combinaison réduction + dissolution</td>
+          </tr>
+          <tr>
+            <td><strong>Q1.3 - Réaction globale Fe + AgCl</strong></td>
+            <td>$$\ce{Fe (s) + 2 AgCl (s) -> Fe^2+ (aq) + 2 Ag (s) + 2 Cl- (aq)}$$</td>
+            <td>Équilibre des électrons échangés ($2\text{ e}^-$)</td>
+          </tr>
+          <tr>
+            <td><strong>Q1.4 - Quotient $Q_{r,i}$ &amp; Sens</strong></td>
+            <td>$\text{Q}_{r,i} = 1,0 \times 10^{-15} \ll K = 10^{22} \implies$ Sens direct</td>
+            <td>Anode (-) = Fe (Oxydation) ; Cathode (+) = Ag (Réduction)</td>
+          </tr>
+          <tr>
+            <td><strong>Q1.5 - Porteurs de charge</strong></td>
+            <td>$e^-$ du Fe vers Ag ; $I$ du Ag vers Fe ; Cl⁻ vers ① ; K⁺ vers ②</td>
+            <td>Électroneutralité par le pont salin</td>
+          </tr>
+          <tr>
+            <td><strong>Q2.1 - Coque navire (Zinc)</strong></td>
+            <td>$$\ce{Zn (s) = Zn^2+ (aq) + 2 e-}$$</td>
+            <td>Anode sacrificielle (Zinc plus réducteur que Fer)</td>
+          </tr>
+          <tr>
+            <td><strong>Q2.2 - Nickelage rayé</strong></td>
+            <td>$$\ce{2 Fe (s) + O2 (aq) + 2 H2O (l) -> 2 Fe^2+ (aq) + 4 HO- (aq)}$$</td>
+            <td>Corrosion galvanique du Fer (Fe est l'anode face au Ni)</td>
+          </tr>
+          <tr>
+            <td><strong>Q2.3 - Limite galvanisation</strong></td>
+            <td>Protection efficace jusqu'à <strong>consommation totale du zinc</strong></td>
+            <td>Le zinc continue de s'oxyder tant qu'il est présent</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <footer>
+      <p>Corrigé rédigé à l'intention des élèves de Terminale Spécialité Physique-Chimie • Présentation interactive HTML / CSS / MathJax 3 (mhchem)</p>
+    </footer>
+
+  </div>
+</body>
+</html>
